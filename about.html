@@ -69,59 +69,60 @@
             color: var(--primary-color);
         }
 
-        .about-header {
-            padding: 8rem 0 4rem;
-            background-color: var(--light-bg);
-            text-align: center;
-        }
-
-        .about-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: var(--text-color);
-        }
-
-        .about-content {
-            padding: 4rem 0;
+        main {
+            padding-top: 5rem;
         }
 
         .about-section {
-            max-width: 800px;
-            margin: 0 auto 3rem;
+            padding: 4rem 0;
+            background-color: var(--light-bg);
         }
 
-        .about-section p {
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+
+        .about-content p {
             margin-bottom: 1.5rem;
         }
 
-        .mission-statement {
-            background-color: var(--light-bg);
-            padding: 3rem 0;
-            text-align: center;
-            margin: 2rem 0;
+        .team-section {
+            padding: 4rem 0;
         }
 
-        .mission-statement p {
-            font-size: 1.25rem;
-            max-width: 800px;
-            margin: 0 auto;
-            font-style: italic;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background-color: var(--primary-color);
-            color: var(--white);
-            text-decoration: none;
-            border-radius: 0.375rem;
-            font-weight: 500;
-            transition: background-color 0.3s;
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
             margin-top: 2rem;
         }
 
-        .btn:hover {
-            background-color: var(--secondary-color);
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .team-member p {
+            color: var(--secondary-color);
         }
 
         footer {
@@ -156,8 +157,8 @@
                 display: none;
             }
 
-            .about-header h1 {
-                font-size: 2rem;
+            .team-grid {
+                grid-template-columns: 1fr;
             }
 
             .footer-content {
@@ -172,38 +173,49 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">AutomatePro</div>
+                <div class="logo">Global Mishka</div>
                 <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="testimonials.html">Testimonials</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/services.html">Services</a>
+                    <a href="/testimonials.html">Testimonials</a>
+                    <a href="/contact.html">Contact</a>
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="about-header">
+        <section class="about-section">
             <div class="container">
-                <h1>Who We Are</h1>
+                <div class="about-content">
+                    <h1>About Us</h1>
+                    <p>At Global Mishka, we're passionate about helping businesses achieve their full potential through smart automation and efficient workflows. Our journey began with a simple mission: to help businesses save time and resources by streamlining their operations.</p>
+                    <p>With years of experience in business process optimization and automation, we understand the unique challenges that modern businesses face. Our team of experts specializes in implementing cutting-edge solutions that drive growth and efficiency.</p>
+                    <p>We believe that every business, regardless of its size, deserves access to powerful automation tools and strategies. That's why we offer scalable solutions that can grow with your business.</p>
+                </div>
             </div>
         </section>
 
-        <section class="about-content">
+        <section class="team-section">
             <div class="container">
-                <div class="about-section">
-                    <p>We're passionate problem-solvers who love turning chaos into clarity. With years of experience designing efficient workflows and dashboards, we've helped businesses simplify their operations and reclaim their time.</p>
-                    <p>Our expertise in tools like Airtable, Asana, and advanced Google Sheets formulas means we can create the perfect system to meet your unique needs. Whether you're a healthcare practice, a professional services firm, or an entrepreneur, we'll deliver solutions that work for you.</p>
-                </div>
-
-                <div class="mission-statement">
-                    <p>"We believe that every business deserves to operate at its best. By simplifying your workflows, we help you focus on growth, customer satisfaction, and your own success."</p>
-                </div>
-
-                <div class="about-section" style="text-align: center;">
-                    <a href="contact.html" class="btn">Let's Get Started</a>
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Team Member">
+                        <h3>John Doe</h3>
+                        <p>Automation Specialist</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Team Member">
+                        <h3>Jane Smith</h3>
+                        <p>Process Optimization Expert</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Team Member">
+                        <h3>Mike Johnson</h3>
+                        <p>Integration Specialist</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -213,11 +225,11 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="testimonials.html">Testimonials</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/services.html">Services</a>
+                    <a href="/testimonials.html">Testimonials</a>
+                    <a href="/contact.html">Contact</a>
                 </div>
                 <div class="social-links">
                     <a href="#" aria-label="LinkedIn"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
